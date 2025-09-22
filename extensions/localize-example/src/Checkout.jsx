@@ -1,46 +1,55 @@
 import '@shopify/ui-extensions/preact';
 import {render} from "preact";
 
+
 // 1. Export the extension
 export default function() {
   render(<Extension />, document.body)
 }
 
 function Extension() {
-  // 2. Check instructions for feature availability, see https://shopify.dev/docs/api/checkout-ui-extensions/apis/cart-instructions for details
+  // Access Shopify's global i18n object
+  const i18n = shopify.i18n;
+  const translate = (key, replacements) => i18n.translate(key, replacements);
+  
+  // Example data for demonstration
+  const balance = 49.99;
+  const points = 1250;
+  
+  // Use i18n.formatCurrency() for proper currency formatting
+  const formattedBalance = i18n.formatCurrency(balance);
+  
+  // Use i18n.formatNumber() for proper number formatting
+  const formattedPoints = i18n.formatNumber(points);
+  
+  // 2. Check instructions for feature availability
   if (!shopify.instructions.value.attributes.canUpdateAttributes) {
-    // For checkouts such as draft order invoices, cart attributes may not be allowed
-    // Consider rendering a fallback UI or nothing at all, if the feature is unavailable
     return (
       <s-banner heading="localize-example" tone="warning">
-        {shopify.i18n.translate("attributeChangesAreNotSupported")}
+        {translate("attributeChangesAreNotSupported")}
       </s-banner>
     );
   }
 
-  // 3. Render a UI
+  // 3. Render a UI with locale-aware content
   return (
-    <s-banner heading="localize-example">
+    <s-banner heading={translate("bannerHeading")}>
       <s-stack gap="base">
+
+        {/* Show pluralized loyalty points */}
         <s-text>
-          {shopify.i18n.translate("welcome", {
-            target: <s-text type="emphasis">{shopify.extension.target}</s-text>,
+          {translate("loyaltyPoints", {
+            count: points,
+            formattedPoints
           })}
         </s-text>
-        <s-button onClick={handleClick}>
-          {shopify.i18n.translate("addAFreeGiftToMyOrder")}
-        </s-button>
+        
+        {/* Show formatted currency */}
+        <s-text>
+          {translate("balanceRemaining", { formattedBalance })}
+        </s-text>
+        
       </s-stack>
     </s-banner>
   );
-
-  async function handleClick() {
-    // 4. Call the API to modify checkout
-    const result = await shopify.applyAttributeChange({
-      key: "requestedFreeGift",
-      type: "updateAttribute",
-      value: "yes",
-    });
-    console.log("applyAttributeChange result", result);
-  }
 }

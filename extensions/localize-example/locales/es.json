@@ -1,0 +1,43 @@
+{
+  "welcome": "¡Bienvenido a la extensión {{target}}!",
+  "iWouldLikeAFreeGiftWithMyOrder": "Me gustaría recibir un regalo gratis con mi pedido",
+  "addAFreeGiftToMyOrder": "Añadir un regalo gratis a mi pedido",
+  "attributeChangesAreNotSupported": "Los cambios de atributos no están soportados en este checkout",
+  "bannerHeading": "Tus recompensas y saldo",
+  "currentLocale": "Idioma actual: {{locale}}",
+  "giftAddedSuccess": "¡Regalo gratis añadido a tu pedido!",
+  "giftAddedError": "No se pudo añadir el regalo. Por favor, inténtalo de nuevo.",
+  "balanceRemaining": "Tu saldo es {{formattedBalance}}",
+  "loyaltyPoints": {
+    "zero": "No tienes puntos de fidelidad",
+    "one": "Tienes {{formattedPoints}} punto de fidelidad",
+    "other": "Tienes {{formattedPoints}} puntos de fidelidad"
+  },
+  "priceDisplay": "Precio: {{amount}}",
+  "itemCount": {
+    "zero": "Sin artículos",
+    "one": "{{formattedCount}} artículo",
+    "other": "{{formattedCount}} artículos"
+  },
+  "deliveryDate": "Entrega estimada: {{date}}",
+  "cartItems": {
+    "zero": "Tu carrito está vacío",
+    "one": "{{formattedCount}} artículo en el carrito",
+    "other": "{{formattedCount}} artículos en el carrito"
+  },
+  "savings": {
+    "zero": "Sin ahorros todavía",
+    "one": "Ahorras {{amount}}",
+    "other": "Ahorras {{amount}} en {{count}} artículos"
+  },
+  "freeShippingProgress": "Tu total es {{current}}. Añade {{difference}} más para obtener envío gratis (mínimo {{minimum}}).",
+  "almostFreeShipping": "¡Solo te faltan {{amount}} para el envío gratis!",
+  "qualifiedForFreeShipping": "¡Felicidades! Has obtenido envío gratis.",
+  "stockLevel": {
+    "zero": "Agotado",
+    "one": "Solo queda {{formattedStock}} en stock",
+    "other": "{{formattedStock}} en stock"
+  },
+  "priceRange": "{{min}} - {{max}}",
+  "discountInfo": "{{percentOff}}% de descuento - Ahorra {{savings}}"
+}

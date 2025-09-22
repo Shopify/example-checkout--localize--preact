@@ -1,0 +1,43 @@
+{
+  "welcome": "Willkommen bei der {{target}} Erweiterung!",
+  "iWouldLikeAFreeGiftWithMyOrder": "Ich möchte ein kostenloses Geschenk zu meiner Bestellung erhalten",
+  "addAFreeGiftToMyOrder": "Kostenloses Geschenk zu meiner Bestellung hinzufügen",
+  "attributeChangesAreNotSupported": "Attributänderungen werden in diesem Checkout nicht unterstützt",
+  "bannerHeading": "Ihre Prämien & Guthaben",
+  "currentLocale": "Aktuelle Sprache: {{locale}}",
+  "giftAddedSuccess": "Kostenloses Geschenk wurde zu Ihrer Bestellung hinzugefügt!",
+  "giftAddedError": "Geschenk konnte nicht hinzugefügt werden. Bitte versuchen Sie es erneut.",
+  "balanceRemaining": "Ihr Guthaben beträgt {{formattedBalance}}",
+  "loyaltyPoints": {
+    "zero": "Sie haben keine Treuepunkte",
+    "one": "Sie haben {{formattedPoints}} Treuepunkt",
+    "other": "Sie haben {{formattedPoints}} Treuepunkte"
+  },
+  "priceDisplay": "Preis: {{amount}}",
+  "itemCount": {
+    "zero": "Keine Artikel",
+    "one": "{{formattedCount}} Artikel",
+    "other": "{{formattedCount}} Artikel"
+  },
+  "deliveryDate": "Voraussichtliche Lieferung: {{date}}",
+  "cartItems": {
+    "zero": "Ihr Warenkorb ist leer",
+    "one": "{{formattedCount}} Artikel im Warenkorb",
+    "other": "{{formattedCount}} Artikel im Warenkorb"
+  },
+  "savings": {
+    "zero": "Noch keine Ersparnis",
+    "one": "Sie sparen {{amount}}",
+    "other": "Sie sparen {{amount}} bei {{count}} Artikeln"
+  },
+  "freeShippingProgress": "Ihre Bestellsumme beträgt {{current}}. Fügen Sie {{difference}} mehr hinzu für kostenlosen Versand (Mindestbetrag {{minimum}}).",
+  "almostFreeShipping": "Nur noch {{amount}} bis zum kostenlosen Versand!",
+  "qualifiedForFreeShipping": "Herzlichen Glückwunsch! Sie erhalten kostenlosen Versand.",
+  "stockLevel": {
+    "zero": "Nicht auf Lager",
+    "one": "Nur noch {{formattedStock}} auf Lager",
+    "other": "{{formattedStock}} auf Lager"
+  },
+  "priceRange": "{{min}} - {{max}}",
+  "discountInfo": "{{percentOff}}% Rabatt - Sparen Sie {{savings}}"
+}
