@@ -10,7 +10,9 @@ export default function() {
 function Extension() {
   // Access Shopify's global i18n object
   const i18n = shopify.i18n;
+  // [START localization.translate-balance]
   const translate = (key, replacements) => i18n.translate(key, replacements);
+  // [END localization.translate-balance]
   
   // Example balance for demonstration
   const balance = 49.99;
@@ -24,6 +26,7 @@ function Extension() {
   // Use i18n.formatNumber() for proper number formatting
   const formattedPoints = i18n.formatNumber(points);
   // [END localization.format-points]
+
   // 2. Check instructions for feature availability
   if (!shopify.instructions.value.attributes.canUpdateAttributes) {
     return (
@@ -46,11 +49,12 @@ function Extension() {
           })}
         </s-text>
         
+        {/* [START localization.translate-balance] */}
         {/* Show formatted currency */}
         <s-text>
           {translate("balanceRemaining", { formattedBalance })}
         </s-text>
-        
+        {/* [END localization.translate-balance] */}
       </s-stack>
     </s-banner>
   );
