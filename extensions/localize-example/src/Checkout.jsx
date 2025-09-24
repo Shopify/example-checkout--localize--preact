@@ -10,9 +10,7 @@ export default function() {
 function Extension() {
   // Access Shopify's global i18n object
   const i18n = shopify.i18n;
-  // [START localization.translate-balance]
   const translate = (key, replacements) => i18n.translate(key, replacements);
-  // [END localization.translate-balance]
   
   // Example balance for demonstration
   const balance = 49.99;
@@ -40,14 +38,15 @@ function Extension() {
   return (
     <s-banner heading={translate("bannerHeading")}>
       <s-stack gap="base">
-
-        {/* Show pluralized loyalty points */}
+        {/* [START localization.translate-points] */}
+        {/* Show formatted loyalty points */}
         <s-text>
           {translate("loyaltyPoints", {
             count: points,
             formattedPoints
           })}
         </s-text>
+        {/* [END localization.translate-points] */}
         
         {/* [START localization.translate-balance] */}
         {/* Show formatted currency */}
