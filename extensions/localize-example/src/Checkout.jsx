@@ -6,22 +6,24 @@ import {render} from "preact";
 export default function() {
   render(<Extension />, document.body)
 }
-
+// [START localization.format-balance]
 function Extension() {
   // Access Shopify's global i18n object
   const i18n = shopify.i18n;
   const translate = (key, replacements) => i18n.translate(key, replacements);
   
-  // Example data for demonstration
+  // Example balance for demonstration
   const balance = 49.99;
-  const points = 1250;
-  
   // Use i18n.formatCurrency() for proper currency formatting
   const formattedBalance = i18n.formatCurrency(balance);
+  // [END localization.format-balance]
   
+  // [START localization.format-points]
+  // Example points for demonstration
+  const points = 1250;
   // Use i18n.formatNumber() for proper number formatting
   const formattedPoints = i18n.formatNumber(points);
-  
+  // [END localization.format-points]
   // 2. Check instructions for feature availability
   if (!shopify.instructions.value.attributes.canUpdateAttributes) {
     return (
