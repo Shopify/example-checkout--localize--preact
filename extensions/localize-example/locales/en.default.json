@@ -1,43 +1,10 @@
 {
-  "welcome": "Welcome to the {{target}} extension!",
-  "iWouldLikeAFreeGiftWithMyOrder": "I would like to receive a free gift with my order",
-  "addAFreeGiftToMyOrder": "Add a free gift to my order",
   "attributeChangesAreNotSupported": "Attribute changes are not supported in this checkout",
   "bannerHeading": "Your Rewards & Balance",
-  "currentLocale": "Current language: {{locale}}",
-  "giftAddedSuccess": "Free gift added to your order!",
-  "giftAddedError": "Unable to add gift. Please try again.",
   "balanceRemaining": "Your balance is {{formattedBalance}}",
   "loyaltyPoints": {
     "zero": "You have no loyalty points",
     "one": "You have {{formattedPoints}} loyalty point",
     "other": "You have {{formattedPoints}} loyalty points"
-  },
-  "priceDisplay": "Price: {{amount}}",
-  "itemCount": {
-    "zero": "No items",
-    "one": "{{formattedCount}} item",
-    "other": "{{formattedCount}} items"
-  },
-  "deliveryDate": "Estimated delivery: {{date}}",
-  "cartItems": {
-    "zero": "Your cart is empty",
-    "one": "{{formattedCount}} item in cart",
-    "other": "{{formattedCount}} items in cart"
-  },
-  "savings": {
-    "zero": "No savings yet",
-    "one": "You save {{amount}}",
-    "other": "You save {{amount}} on {{count}} items"
-  },
-  "freeShippingProgress": "Your order total is {{current}}. Add {{difference}} more to qualify for free shipping (minimum {{minimum}}).",
-  "almostFreeShipping": "You're only {{amount}} away from free shipping!",
-  "qualifiedForFreeShipping": "Congratulations! You've qualified for free shipping.",
-  "stockLevel": {
-    "zero": "Out of stock",
-    "one": "Only {{formattedStock}} left in stock",
-    "other": "{{formattedStock}} in stock"
-  },
-  "priceRange": "{{min}} - {{max}}",
-  "discountInfo": "{{percentOff}}% off - Save {{savings}}"
+  }
 }
