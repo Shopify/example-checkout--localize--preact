@@ -5,6 +5,7 @@
   "loyaltyPoints": {
     "zero": "You have no loyalty points",
     "one": "You have {{formattedPoints}} loyalty point",
-    "other": "You have {{formattedPoints}} loyalty points"
+    "other": "You have {{formattedPoints}} loyalty points",
+    "many": "You have {{formattedPoints}} loyalty points"
   }
 }
